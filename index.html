@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>群星索引 · AI 工具导航</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-mark"><span>N</span></div>
+        <div>
+          <div class="brand-name">群星索引</div>
+          <div class="brand-sub">AI Tool Atlas</div>
+        </div>
+      </div>
+      <div class="topbar-meta">
+        <div class="topbar-stat">
+          <div class="num" id="stat-total">076</div>
+          <div class="lbl">已收录工具</div>
+        </div>
+        <div class="topbar-stat">
+          <div class="num" id="stat-sectors">10</div>
+          <div class="lbl">分区</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">Coordinates for Creation</div>
+        <h1 class="headline">为每一次创作<br>找到属于它的<em>坐标</em></h1>
+        <p class="hero-desc">一份被认真整理过的 AI 工具索引 —— 按用途分区、按坐标编号，去除噪音，只留下值得点开的那一个。</p>
+
+        <div class="search-console">
+          <div class="coord mono">SRCH·001</div>
+          <input type="text" id="searchInput" placeholder="搜索工具名称、用途或场景，例如「视频」「代码」「配音」…">
+          <button type="button" onclick="document.getElementById('searchInput').focus()">检索</button>
+        </div>
+        <div class="hero-tags">
+          <span>对话助手</span><span>图像生成</span><span>视频生成</span><span>编程开发</span><span>效率办公</span>
+        </div>
+      </div>
+
+      <div class="compass-wrap">
+        <svg viewBox="0 0 400 400" id="compassSvg">
+          <circle class="compass-ring" cx="200" cy="200" r="150"></circle>
+          <circle class="compass-ring inner" cx="200" cy="200" r="96"></circle>
+          <g id="compassTicks"></g>
+          <g class="compass-needle" id="compassNeedle">
+            <polygon class="needle-body" points="200,60 205,200 200,210 195,200"></polygon>
+            <circle cx="200" cy="200" r="5" fill="var(--brass)"></circle>
+          </g>
+          <g class="compass-center">
+            <text x="200" y="196" class="compass-center-label" id="compassLabel">全部分区</text>
+            <text x="200" y="212" class="compass-center-sub" id="compassSub">076 ITEMS</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="filterbar">
+    <div class="wrap filterbar-inner" id="filterBar">
+      <!-- pills injected by JS -->
+      <span class="filter-count" id="filterCount"></span>
+    </div>
+  </div>
+
+  <section class="section-pad wrap">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-mark">群星索引 · N.A.T.</div>
+      <p>本站为收录整理型导航，工具信息以官方网站为准 · 坐标编号仅用于索引排序，不代表推荐顺位</p>
+    </div>
+  </footer>
+
+<script src="js/main.js" defer></script>
+
+
+</body>
+</html>
