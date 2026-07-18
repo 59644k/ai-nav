@@ -1,0 +1,51 @@
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="{{ "/" | relLangURL }}" class="brand">
+      <div class="brand-mark"><span>N</span></div>
+      <div>
+        <div class="brand-name">{{ .Site.Params.brandName }}</div>
+        <div class="brand-sub">{{ .Site.Params.brandSub }}</div>
+      </div>
+    </a>
+
+    <nav class="topbar-nav">
+      {{ range .Site.Menus.main }}
+        {{ $active := false }}
+        {{ if eq .Identifier "home" }}
+          {{ if $.IsHome }}{{ $active = true }}{{ end }}
+        {{ else if eq .Identifier "posts" }}
+          {{ if eq $.Section "posts" }}{{ $active = true }}{{ end }}
+        {{ else if eq .Identifier "tags" }}
+          {{ if or (eq $.Kind "taxonomy") (eq $.Kind "term") }}{{ $active = true }}{{ end }}
+        {{ else if eq .Identifier "archives" }}
+          {{ if eq $.Section "archives" }}{{ $active = true }}{{ end }}
+        {{ end }}
+        <a href="{{ .URL | relLangURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+    {{ if .IsHome }}
+    <div class="topbar-meta">
+      <div class="topbar-stat">
+        <div class="num" id="stat-total">{{ printf "%03d" (len .Site.Data.tools) }}</div>
+        <div class="lbl">已收录工具</div>
+      </div>
+      <div class="topbar-stat">
+        <div class="num" id="stat-sectors">{{ len .Site.Data.categories }}</div>
+        <div class="lbl">分区</div>
+      </div>
+    </div>
+    {{ else }}
+    <div class="topbar-meta">
+      <div class="topbar-stat">
+        <div class="num mono">{{ printf "%03d" (len (where .Site.RegularPages "Section" "posts")) }}</div>
+        <div class="lbl">博客文章</div>
+      </div>
+      <div class="topbar-stat">
+        <div class="num mono">{{ printf "%02d" (len .Site.Taxonomies.tags) }}</div>
+        <div class="lbl">标签</div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{{ $p := .page }}
+{{ $i := .index }}
+<a href="{{ $p.RelPermalink }}" class="card blog-card">
+  <div class="card-top">
+    <div class="card-id-row">
+      <div class="avatar">{{ substr $p.Title 0 1 }}</div>
+      <div>
+        <div class="card-name">{{ $p.Title }}</div>
+        <div class="card-date mono">{{ $p.Date.Format "2006-01-02" }}</div>
+      </div>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+  <div class="card-desc">{{ $p.Summary | plainify | truncate 78 }}</div>
+  <div class="card-foot">
+    <span class="card-tags">
+      {{ range first 3 ($p.Params.tags) }}<span class="card-tag mono">#{{ . }}</span>{{ end }}
+    </span>
+    <span class="card-id mono">POST·{{ printf "%03d" (add $i 1) }}</span>
+  </div>
+</a>

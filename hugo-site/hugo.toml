@@ -1,0 +1,56 @@
+baseURL = "https://example.com/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "群星索引 · AI Tool Atlas"
+theme = ""
+enableRobotsTXT = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 8
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[params]
+  brandName = "群星索引"
+  brandSub = "AI Tool Atlas"
+  heroEyebrow = "Coordinates for Creation"
+  heroTitle = "为每一次创作<br>找到属于它的<em>坐标</em>"
+  heroDesc = "一份被认真整理过的 AI 工具索引 —— 按用途分区、按坐标编号，去除噪音，只留下值得点开的那一个。"
+  searchPlaceholder = "搜索工具名称、用途或场景，例如「视频」「代码」「配音」…"
+  footerNote = "本站为收录整理型导航，工具信息以官方网站为准 · 坐标编号仅用于索引排序，不代表推荐顺位"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "博客"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 4

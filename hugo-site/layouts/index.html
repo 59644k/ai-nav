@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+
+{{ partial "topbar.html" . }}
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">{{ .Site.Params.heroEyebrow }}</div>
+      <h1 class="headline">{{ .Site.Params.heroTitle | safeHTML }}</h1>
+      <p class="hero-desc">{{ .Site.Params.heroDesc }}</p>
+
+      <div class="search-console">
+        <div class="coord mono">SRCH·001</div>
+        <input type="text" id="searchInput" placeholder="{{ .Site.Params.searchPlaceholder }}">
+        <button type="button" onclick="document.getElementById('searchInput').focus()">检索</button>
+      </div>
+      <div class="hero-tags">
+        <span>对话助手</span><span>图像生成</span><span>视频生成</span><span>编程开发</span><span>效率办公</span>
+      </div>
+    </div>
+
+    <div class="compass-wrap">
+      <svg viewBox="0 0 400 400" id="compassSvg">
+        <circle class="compass-ring" cx="200" cy="200" r="150"></circle>
+        <circle class="compass-ring inner" cx="200" cy="200" r="96"></circle>
+        <g id="compassTicks"></g>
+        <g class="compass-needle" id="compassNeedle">
+          <polygon class="needle-body" points="200,60 205,200 200,210 195,200"></polygon>
+          <circle cx="200" cy="200" r="5" fill="var(--brass)"></circle>
+        </g>
+        <g class="compass-center">
+          <text x="200" y="196" class="compass-center-label" id="compassLabel">全部分区</text>
+          <text x="200" y="212" class="compass-center-sub" id="compassSub">{{ printf "%03d" (len .Site.Data.tools) }} ITEMS</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="filterbar">
+  <div class="wrap filterbar-inner" id="filterBar">
+    <!-- pills injected by JS -->
+    <span class="filter-count" id="filterCount"></span>
+  </div>
+</div>
+
+<section class="section-pad wrap">
+  <div class="grid" id="grid"></div>
+</section>
+
+{{ partial "footer.html" . }}
+
+<script>
+  window.SITE_CATEGORIES = {{ .Site.Data.categories | jsonify }};
+  window.SITE_TOOLS = {{ .Site.Data.tools | jsonify }};
+</script>
+<script src="{{ "js/main.js" | relURL }}" defer></script>
+
+</body>
+</html>

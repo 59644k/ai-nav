@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Index by Tag</div>
+    <h1>标签</h1>
+    <p>按标签浏览全部博客内容，点击任意标签查看相关文章。</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="tag-cloud">
+    {{ range .Pages.ByTitle }}
+      <a class="tag-pill" href="{{ .RelPermalink }}">
+        {{ .Title }} <span class="count mono">{{ len .Pages }}</span>
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

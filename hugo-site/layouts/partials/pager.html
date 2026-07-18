@@ -1,0 +1,18 @@
+{{ $paginator := . }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pager">
+  {{ if $paginator.HasPrev }}
+    <a class="pager-btn" href="{{ $paginator.Prev.URL }}">← 上一页</a>
+  {{ else }}
+    <span class="pager-btn disabled">← 上一页</span>
+  {{ end }}
+
+  <span class="pager-info mono">{{ printf "%02d" $paginator.PageNumber }} / {{ printf "%02d" $paginator.TotalPages }}</span>
+
+  {{ if $paginator.HasNext }}
+    <a class="pager-btn" href="{{ $paginator.Next.URL }}">下一页 →</a>
+  {{ else }}
+    <span class="pager-btn disabled">下一页 →</span>
+  {{ end }}
+</nav>
+{{ end }}
