@@ -1,0 +1,190 @@
+/* =========================================================
+   博客模块样式扩展
+   —— 仅新增选择器，复用 style.css 中的设计变量（--ink / --brass / --panel 等）
+   —— 不修改、不覆盖首页任何既有样式，保证视觉风格统一
+   ========================================================= */
+
+/* ---------- 顶部导航（新增博客入口） ---------- */
+.topbar-nav{
+  display:flex; align-items:center; gap:22px;
+  margin-left:36px;
+}
+.topbar-nav a{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px; letter-spacing:0.08em;
+  color:var(--text-mid);
+  text-transform:uppercase;
+  padding:4px 0;
+  border-bottom:1px solid transparent;
+  transition:color 0.2s, border-color 0.2s;
+}
+.topbar-nav a:hover{ color:var(--text-hi); }
+.topbar-nav a.active{ color:var(--brass); border-bottom-color:var(--brass); }
+
+@media (max-width:900px){
+  .topbar-nav{ margin-left:16px; gap:14px; }
+}
+@media (max-width:640px){
+  .topbar-inner{ flex-wrap:wrap; row-gap:12px; }
+  .topbar-nav{ margin-left:0; order:3; width:100%; }
+  .topbar-meta{ margin-left:auto; }
+}
+
+/* ---------- 页面头（博客/标签/归档 通用页头） ---------- */
+.page-head{
+  padding:64px 0 40px;
+  border-bottom:1px solid var(--line-soft);
+}
+.page-head .eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.18em;
+  color:var(--brass); text-transform:uppercase; margin-bottom:18px;
+}
+.page-head .eyebrow::before{ content:''; width:20px; height:1px; background:var(--brass); }
+.page-head h1{
+  font-family:'Fraunces', serif; font-weight:500;
+  font-size:clamp(28px, 3.6vw, 42px); line-height:1.15;
+  color:var(--text-hi);
+}
+.page-head p{ margin-top:14px; color:var(--text-mid); font-size:15px; max-width:56ch; line-height:1.7; }
+
+/* ---------- 博客列表：card 复用首页卡片外观 ---------- */
+a.card.blog-card{ display:flex; }
+.blog-card .card-desc{ min-height:44px; }
+.blog-card .card-date{
+  font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-low); margin-top:1px;
+}
+.blog-card .card-tags{ display:flex; gap:6px; flex-wrap:wrap; }
+.blog-card .card-tags span{
+  font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:0.04em;
+  color:var(--signal); text-transform:uppercase;
+}
+
+/* ---------- 分页 ---------- */
+.pager{
+  display:flex; align-items:center; justify-content:space-between;
+  margin-top:36px; padding-top:24px; border-top:1px solid var(--line-soft);
+}
+.pager-btn{
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.05em;
+  color:var(--text-mid); padding:9px 16px; border:1px solid var(--line);
+  transition:all 0.2s; white-space:nowrap;
+}
+.pager-btn:hover{ border-color:var(--brass-dim); color:var(--text-hi); }
+.pager-btn.disabled{ opacity:0.35; pointer-events:none; }
+.pager-info{
+  font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-low);
+}
+
+/* ---------- 标签云 ---------- */
+.tag-cloud{ display:flex; flex-wrap:wrap; gap:10px; padding:48px 0 100px; }
+.tag-pill{
+  font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.03em;
+  color:var(--text-mid); padding:8px 16px; border:1px solid var(--line);
+  transition:all 0.2s; display:inline-flex; align-items:center; gap:8px;
+}
+.tag-pill:hover{ border-color:var(--brass); color:var(--text-hi); }
+.tag-pill .count{ color:var(--brass); }
+
+/* ---------- 归档 / Archives ---------- */
+.archive-wrap{ padding:48px 0 100px; }
+.archive-year{
+  display:flex; align-items:baseline; gap:14px;
+  margin:44px 0 18px;
+}
+.archive-year:first-child{ margin-top:0; }
+.archive-year .num{
+  font-family:'Fraunces', serif; font-size:26px; color:var(--brass); font-weight:600;
+}
+.archive-year .count{
+  font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-low);
+}
+.archive-year::after{ content:''; flex:1; height:1px; background:var(--line-soft); }
+.archive-list{ display:flex; flex-direction:column; }
+.archive-item{
+  display:flex; align-items:baseline; gap:18px;
+  padding:13px 0; border-bottom:1px solid var(--line-soft);
+  transition:padding-left 0.2s;
+}
+.archive-item:hover{ padding-left:6px; }
+.archive-item:hover .archive-title{ color:var(--brass); }
+.archive-date{
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--text-low);
+  flex-shrink:0; width:52px;
+}
+.archive-title{
+  font-family:'Fraunces', serif; font-size:15.5px; color:var(--text-hi); transition:color 0.2s;
+}
+
+/* ---------- 文章正文（单篇博客） ---------- */
+.post-single{ padding:56px 0 100px; }
+.post-header{ max-width:74ch; margin:0 auto 40px; }
+.post-meta{
+  display:flex; gap:16px; flex-wrap:wrap; align-items:center;
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--text-low);
+  margin-bottom:18px;
+}
+.post-meta .tag-inline{ color:var(--signal); }
+.post-title{
+  font-family:'Fraunces', serif; font-weight:500;
+  font-size:clamp(28px, 4vw, 44px); line-height:1.2; color:var(--text-hi);
+}
+.post-desc{ margin-top:16px; color:var(--text-mid); font-size:15.5px; line-height:1.7; }
+
+.post-body{
+  max-width:74ch; margin:0 auto;
+  color:var(--text-mid); font-size:15.5px; line-height:1.85;
+}
+.post-body h2, .post-body h3, .post-body h4{
+  font-family:'Fraunces', serif; color:var(--text-hi); font-weight:600;
+  margin:38px 0 14px; line-height:1.35;
+}
+.post-body h2{ font-size:24px; }
+.post-body h3{ font-size:19px; }
+.post-body p{ margin:16px 0; }
+.post-body a{ color:var(--brass); border-bottom:1px solid var(--brass-soft); }
+.post-body a:hover{ border-bottom-color:var(--brass); }
+.post-body ul, .post-body ol{ margin:16px 0; padding-left:22px; }
+.post-body li{ margin:6px 0; }
+.post-body blockquote{
+  margin:24px 0; padding:4px 20px; border-left:2px solid var(--brass);
+  color:var(--text-mid); font-style:italic; background:var(--panel);
+}
+.post-body code{
+  font-family:'IBM Plex Mono', monospace; font-size:0.88em;
+  background:var(--panel-hi); color:var(--text-hi); padding:2px 6px; border-radius:2px;
+}
+.post-body pre{
+  margin:20px 0; padding:18px 20px; background:var(--panel);
+  border:1px solid var(--line-soft); overflow-x:auto;
+}
+.post-body pre code{ background:none; padding:0; }
+.post-body img{ max-width:100%; display:block; margin:24px 0; border:1px solid var(--line-soft); }
+.post-body hr{ border:none; border-top:1px solid var(--line-soft); margin:36px 0; }
+
+.post-tags{
+  max-width:74ch; margin:40px auto 0; display:flex; gap:8px; flex-wrap:wrap;
+  padding-top:24px; border-top:1px solid var(--line-soft);
+}
+
+.post-nav{
+  max-width:74ch; margin:40px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:1px;
+  background:var(--line-soft); border:1px solid var(--line-soft);
+}
+.post-nav a{
+  background:var(--panel); padding:18px 20px; transition:background 0.2s;
+}
+.post-nav a:hover{ background:var(--panel-hi); }
+.post-nav .dir{
+  font-family:'IBM Plex Mono', monospace; font-size:10px; color:var(--text-low);
+  letter-spacing:0.1em; text-transform:uppercase;
+}
+.post-nav .ttl{
+  font-family:'Fraunces', serif; font-size:14.5px; color:var(--text-hi); margin-top:6px;
+}
+.post-nav .next{ text-align:right; }
+
+@media (max-width:640px){
+  .post-nav{ grid-template-columns:1fr; }
+  .post-nav .next{ text-align:left; }
+}

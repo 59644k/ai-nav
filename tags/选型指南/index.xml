@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>选型指南 on 群星索引 · AI Tool Atlas</title>
+		<link>https://example.com/tags/%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97/</link>
+		<description>Recent content in 选型指南 on 群星索引 · AI Tool Atlas</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.com/tags/%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>如何在众多 AI 视频工具里挑到合适的那一个</title>
+				<link>https://example.com/posts/choose-ai-video-tool/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/choose-ai-video-tool/</guid>
+				<description>&lt;p&gt;AI 视频生成工具这两年更新很快，功能列表看起来都差不多，但真正上手后体验差异很大。挑选时，与其看参数表，不如先想清楚自己的场景。&lt;/p&gt;&#xA;&lt;h2 id=&#34;先明确你的产出目标&#34;&gt;先明确你的产出目标&lt;/h2&gt;&#xA;&lt;p&gt;如果是做营销短片，一致性和运镜控制往往比画面精致度更重要；如果是概念验证或素材探索，生成速度和迭代成本反而更关键。把目标写下来，再回头看工具的优先级排序会清楚很多。&lt;/p&gt;&#xA;&lt;h2 id=&#34;三个值得实际测试的维度&#34;&gt;三个值得实际测试的维度&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;时长与稳定性&lt;/strong&gt;：能不能生成 10 秒以上还保持人物、场景一致&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;运镜与可控性&lt;/strong&gt;：是否支持关键帧、镜头运动描述&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;后期衔接成本&lt;/strong&gt;：导出格式、分辨率是否方便进现有剪辑流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;不要只看官方演示&#34;&gt;不要只看官方演示&lt;/h2&gt;&#xA;&lt;p&gt;官方展示视频通常是精选结果，建议直接用自己的真实素材或文案跑一遍，观察失败率而不是最好的那一次输出。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;没有放之四海皆准的&amp;quot;最好用&amp;quot;，只有&amp;quot;最适合当前场景&amp;quot;。花半小时用真实需求测试，比看十篇评测更有效。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>从 Prompt 到成稿：AI 写作工具的进阶用法</title>
+				<link>https://example.com/posts/ai-writing-tools-guide/</link>
+				<pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/ai-writing-tools-guide/</guid>
+				<description>&lt;p&gt;很多人对 AI 写作工具的印象还停留在&amp;quot;输入一句话生成一篇文章&amp;quot;，但这种用法产出的内容通常比较空泛。更好的方式是把写作拆成阶段，分别使用 AI 协作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第一阶段结构先行&#34;&gt;第一阶段：结构先行&lt;/h2&gt;&#xA;&lt;p&gt;先让工具帮你梳理提纲和逻辑结构，而不是直接生成正文。结构确认后再往下写，返工率会明显降低。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第二阶段分段生成人工把关&#34;&gt;第二阶段：分段生成，人工把关&lt;/h2&gt;&#xA;&lt;p&gt;按小节生成内容，每段都自己读一遍再决定是否采用，比整篇生成后再大改效率更高，也更容易保持文风统一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第三阶段润色与降重&#34;&gt;第三阶段：润色与降重&lt;/h2&gt;&#xA;&lt;p&gt;初稿完成后，用工具做语言层面的润色、检查重复表达，这一步 AI 的价值反而最稳定、最不容易踩坑。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;把 AI 当协作者而不是代笔者，分阶段介入，成稿质量和效率都会比&amp;quot;一键生成&amp;quot;更可靠。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

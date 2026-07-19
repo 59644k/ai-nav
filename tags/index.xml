@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on 群星索引 · AI Tool Atlas</title>
+		<link>https://example.com/tags/</link>
+		<description>Recent content in Tags on 群星索引 · AI Tool Atlas</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>视频生成</title>
+				<link>https://example.com/tags/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>选型指南</title>
+				<link>https://example.com/tags/%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>编程开发</title>
+				<link>https://example.com/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link>
+				<pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>效率</title>
+				<link>https://example.com/tags/%E6%95%88%E7%8E%87/</link>
+				<pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E6%95%88%E7%8E%87/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>写作文案</title>
+				<link>https://example.com/tags/%E5%86%99%E4%BD%9C%E6%96%87%E6%A1%88/</link>
+				<pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E5%86%99%E4%BD%9C%E6%96%87%E6%A1%88/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>行业观察</title>
+				<link>https://example.com/tags/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/</link>
+				<pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>自动化 · Agent</title>
+				<link>https://example.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96--agent/</link>
+				<pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96--agent/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>搜索研究</title>
+				<link>https://example.com/tags/%E6%90%9C%E7%B4%A2%E7%A0%94%E7%A9%B6/</link>
+				<pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/tags/%E6%90%9C%E7%B4%A2%E7%A0%94%E7%A9%B6/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

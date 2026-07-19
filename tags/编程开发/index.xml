@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>编程开发 on 群星索引 · AI Tool Atlas</title>
+		<link>https://example.com/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link>
+		<description>Recent content in 编程开发 on 群星索引 · AI Tool Atlas</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.com/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>把 AI 编程助手用出效率的三个习惯</title>
+				<link>https://example.com/posts/coding-agent-workflow/</link>
+				<pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/coding-agent-workflow/</guid>
+				<description>&lt;p&gt;用了一段时间 AI 编程助手后，发现效率提升的关键往往不在工具本身，而在使用习惯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯一把任务拆小再交给它&#34;&gt;习惯一：把任务拆小再交给它&lt;/h2&gt;&#xA;&lt;p&gt;一次性丢给助手一个模糊的大需求，得到的代码通常需要大改。拆成可独立验证的小步骤，每一步都能跑通，整体反而更快。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯二让它先复述理解再动手&#34;&gt;习惯二：让它先复述理解再动手&lt;/h2&gt;&#xA;&lt;p&gt;在正式生成代码前，先要求它用自己的话复述需求、列出实现思路，能提前暴露理解偏差，避免返工。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯三把测试写在前面&#34;&gt;习惯三：把测试写在前面&lt;/h2&gt;&#xA;&lt;p&gt;给出输入输出示例或简单测试用例，再让助手实现，比事后靠肉眼检查代码正确性靠谱得多。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;工具能力在快速迭代，但&amp;quot;如何提问、如何拆解、如何验证&amp;quot;这套工作方法，才是长期不贬值的能力。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

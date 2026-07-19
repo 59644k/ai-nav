@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>行业观察 on 群星索引 · AI Tool Atlas</title>
+		<link>https://example.com/tags/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/</link>
+		<description>Recent content in 行业观察 on 群星索引 · AI Tool Atlas</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.com/tags/%E8%A1%8C%E4%B8%9A%E8%A7%82%E5%AF%9F/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2025 年的自动化 Agent 工具，走到哪一步了</title>
+				<link>https://example.com/posts/ai-agent-automation-2025/</link>
+				<pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/ai-agent-automation-2025/</guid>
+				<description>&lt;p&gt;这一年 Agent 类产品密集发布，但真正稳定跑在日常工作流里的，其实是少数几种模式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;落地最稳的场景规则明确的重复性任务&#34;&gt;落地最稳的场景：规则明确的重复性任务&lt;/h2&gt;&#xA;&lt;p&gt;比如信息抓取后按规则分发、多个应用之间的数据同步，这类任务边界清晰、失败可回滚，Agent 化之后收益很直接。&lt;/p&gt;&#xA;&lt;h2 id=&#34;还不够稳的场景多步骤开放式决策&#34;&gt;还不够稳的场景：多步骤开放式决策&lt;/h2&gt;&#xA;&lt;p&gt;需要连续判断、涉及多个外部系统且容错率低的任务，目前仍然需要较多人工介入和复核，完全放手的风险偏高。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一个实用建议&#34;&gt;一个实用建议&lt;/h2&gt;&#xA;&lt;p&gt;先从&amp;quot;结果可验证、出错代价小&amp;quot;的任务开始接入 Agent，跑稳定之后再逐步扩大自动化范围，而不是一开始就追求端到端全自动。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;Agent 工具的能力边界仍在扩张，但&amp;quot;任务可验证性&amp;quot;依然是决定要不要交给它做的核心标准。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
