@@ -1,94 +1,135 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+	<meta name="generator" content="Hugo 0.164.0">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>群星索引 · AI 工具导航</title>
+<title>群星索引 · AI Tool Atlas</title>
+<meta name="description" content="一份被认真整理过的 AI 工具索引 —— 按用途分区、按坐标编号，去除噪音，只留下值得点开的那一个。">
+<link rel="canonical" href="https://example.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/blog.css">
+
 
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">
-        <div class="brand-mark"><span>N</span></div>
-        <div>
-          <div class="brand-name">群星索引</div>
-          <div class="brand-sub">AI Tool Atlas</div>
-        </div>
-      </div>
-      <div class="topbar-meta">
-        <div class="topbar-stat">
-          <div class="num" id="stat-total">076</div>
-          <div class="lbl">已收录工具</div>
-        </div>
-        <div class="topbar-stat">
-          <div class="num" id="stat-sectors">10</div>
-          <div class="lbl">分区</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="hero">
-    <div class="wrap hero-inner">
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark"><span>N</span></div>
       <div>
-        <div class="eyebrow">Coordinates for Creation</div>
-        <h1 class="headline">为每一次创作<br>找到属于它的<em>坐标</em></h1>
-        <p class="hero-desc">一份被认真整理过的 AI 工具索引 —— 按用途分区、按坐标编号，去除噪音，只留下值得点开的那一个。</p>
-
-        <div class="search-console">
-          <div class="coord mono">SRCH·001</div>
-          <input type="text" id="searchInput" placeholder="搜索工具名称、用途或场景，例如「视频」「代码」「配音」…">
-          <button type="button" onclick="document.getElementById('searchInput').focus()">检索</button>
-        </div>
-        <div class="hero-tags">
-          <span>对话助手</span><span>图像生成</span><span>视频生成</span><span>编程开发</span><span>效率办公</span>
-        </div>
+        <div class="brand-name">群星索引</div>
+        <div class="brand-sub">AI Tool Atlas</div>
       </div>
+    </a>
 
-      <div class="compass-wrap">
-        <svg viewBox="0 0 400 400" id="compassSvg">
-          <circle class="compass-ring" cx="200" cy="200" r="150"></circle>
-          <circle class="compass-ring inner" cx="200" cy="200" r="96"></circle>
-          <g id="compassTicks"></g>
-          <g class="compass-needle" id="compassNeedle">
-            <polygon class="needle-body" points="200,60 205,200 200,210 195,200"></polygon>
-            <circle cx="200" cy="200" r="5" fill="var(--brass)"></circle>
-          </g>
-          <g class="compass-center">
-            <text x="200" y="196" class="compass-center-label" id="compassLabel">全部分区</text>
-            <text x="200" y="212" class="compass-center-sub" id="compassSub">076 ITEMS</text>
-          </g>
-        </svg>
+    <nav class="topbar-nav">
+      
+        
+        
+          
+        
+        <a href="/" class="active">首页</a>
+      
+        
+        
+          
+        
+        <a href="/posts/">博客</a>
+      
+        
+        
+          
+        
+        <a href="/tags/">标签</a>
+      
+        
+        
+          
+        
+        <a href="/archives/">归档</a>
+      
+    </nav>
+
+    
+    <div class="topbar-meta">
+      <div class="topbar-stat">
+        <div class="num" id="stat-total">063</div>
+        <div class="lbl">已收录工具</div>
+      </div>
+      <div class="topbar-stat">
+        <div class="num" id="stat-sectors">10</div>
+        <div class="lbl">分区</div>
       </div>
     </div>
-  </section>
+    
+  </div>
+</div>
 
-  <div class="filterbar">
-    <div class="wrap filterbar-inner" id="filterBar">
-      <!-- pills injected by JS -->
-      <span class="filter-count" id="filterCount"></span>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">Coordinates for Creation</div>
+      <h1 class="headline">为每一次创作<br>找到属于它的<em>坐标</em></h1>
+      <p class="hero-desc">一份被认真整理过的 AI 工具索引 —— 按用途分区、按坐标编号，去除噪音，只留下值得点开的那一个。</p>
+
+      <div class="search-console">
+        <div class="coord mono">SRCH·001</div>
+        <input type="text" id="searchInput" placeholder="搜索工具名称、用途或场景，例如「视频」「代码」「配音」…">
+        <button type="button" onclick="document.getElementById('searchInput').focus()">检索</button>
+      </div>
+      <div class="hero-tags">
+        <span>对话助手</span><span>图像生成</span><span>视频生成</span><span>编程开发</span><span>效率办公</span>
+      </div>
+    </div>
+
+    <div class="compass-wrap">
+      <svg viewBox="0 0 400 400" id="compassSvg">
+        <circle class="compass-ring" cx="200" cy="200" r="150"></circle>
+        <circle class="compass-ring inner" cx="200" cy="200" r="96"></circle>
+        <g id="compassTicks"></g>
+        <g class="compass-needle" id="compassNeedle">
+          <polygon class="needle-body" points="200,60 205,200 200,210 195,200"></polygon>
+          <circle cx="200" cy="200" r="5" fill="var(--brass)"></circle>
+        </g>
+        <g class="compass-center">
+          <text x="200" y="196" class="compass-center-label" id="compassLabel">全部分区</text>
+          <text x="200" y="212" class="compass-center-sub" id="compassSub">063 ITEMS</text>
+        </g>
+      </svg>
     </div>
   </div>
+</section>
 
-  <section class="section-pad wrap">
-    <div class="grid" id="grid"></div>
-  </section>
+<div class="filterbar">
+  <div class="wrap filterbar-inner" id="filterBar">
+    
+    <span class="filter-count" id="filterCount"></span>
+  </div>
+</div>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <div class="footer-mark">群星索引 · N.A.T.</div>
-      <p>本站为收录整理型导航，工具信息以官方网站为准 · 坐标编号仅用于索引排序，不代表推荐顺位</p>
-    </div>
-  </footer>
+<section class="section-pad wrap">
+  <div class="grid" id="grid"></div>
+</section>
 
-<script src="js/main.js" defer></script>
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-mark">群星索引 · N.A.T.</div>
+    <p>本站为收录整理型导航，工具信息以官方网站为准 · 坐标编号仅用于索引排序，不代表推荐顺位</p>
+  </div>
+</footer>
 
+
+<script>
+  window.SITE_CATEGORIES = "[{\"code\":\"CH\",\"key\":\"chat\",\"name\":\"对话助手\"},{\"code\":\"IM\",\"key\":\"image\",\"name\":\"图像生成\"},{\"code\":\"VD\",\"key\":\"video\",\"name\":\"视频生成\"},{\"code\":\"AU\",\"key\":\"audio\",\"name\":\"音频音乐\"},{\"code\":\"CO\",\"key\":\"code\",\"name\":\"编程开发\"},{\"code\":\"WR\",\"key\":\"write\",\"name\":\"写作文案\"},{\"code\":\"DS\",\"key\":\"design\",\"name\":\"设计创意\"},{\"code\":\"OF\",\"key\":\"office\",\"name\":\"效率办公\"},{\"code\":\"SR\",\"key\":\"search\",\"name\":\"搜索研究\"},{\"code\":\"AG\",\"key\":\"agent\",\"name\":\"自动化 · Agent\"}]";
+  window.SITE_TOOLS = "[{\"cat\":\"chat\",\"desc\":\"综合型对话与创作助手，支持插件、联网检索与自定义 GPT。\",\"name\":\"ChatGPT\",\"org\":\"OpenAI\"},{\"cat\":\"chat\",\"desc\":\"擅长长文写作与代码理解，注重安全性与可控输出。\",\"name\":\"Claude\",\"org\":\"Anthropic\"},{\"cat\":\"chat\",\"desc\":\"深度集成谷歌生态，具备较强的多模态理解能力。\",\"name\":\"Gemini\",\"org\":\"Google\"},{\"cat\":\"chat\",\"desc\":\"面向中文语境优化的对话与内容生成模型。\",\"name\":\"文心一言\",\"org\":\"百度\"},{\"cat\":\"chat\",\"desc\":\"与阿里云生态深度整合的对话与开发平台。\",\"name\":\"通义千问\",\"org\":\"阿里云\"},{\"cat\":\"chat\",\"desc\":\"支持超长上下文，适合长文档阅读与总结。\",\"name\":\"Kimi\",\"org\":\"月之暗面\"},{\"cat\":\"chat\",\"desc\":\"与字节系产品联动紧密的日常对话助手。\",\"name\":\"豆包\",\"org\":\"字节跳动\"},{\"cat\":\"chat\",\"desc\":\"推理与代码能力突出的开源系大模型。\",\"name\":\"DeepSeek\",\"org\":\"深度求索\"},{\"cat\":\"chat\",\"desc\":\"语音交互见长的国产多模态大模型。\",\"name\":\"讯飞星火\",\"org\":\"科大讯飞\"},{\"cat\":\"chat\",\"desc\":\"支持多模态输入的国产对话助手。\",\"name\":\"智谱清言\",\"org\":\"智谱 AI\"},{\"cat\":\"image\",\"desc\":\"以艺术质感与氛围渲染见长的图像生成工具。\",\"name\":\"Midjourney\",\"org\":\"Midjourney\"},{\"cat\":\"image\",\"desc\":\"开源、可本地部署、生态插件丰富的图像模型。\",\"name\":\"Stable Diffusion\",\"org\":\"Stability AI\"},{\"cat\":\"image\",\"desc\":\"与 ChatGPT 深度结合，支持对话式修图。\",\"name\":\"DALL·E 3\",\"org\":\"OpenAI\"},{\"cat\":\"image\",\"desc\":\"与 Adobe 全家桶无缝衔接，商用授权路径清晰。\",\"name\":\"Adobe Firefly\",\"org\":\"Adobe\"},{\"cat\":\"image\",\"desc\":\"面向游戏美术与概念设计的图像生成平台。\",\"name\":\"Leonardo AI\",\"org\":\"Leonardo\"},{\"cat\":\"image\",\"desc\":\"在图像中生成清晰可读文字的排版能力突出。\",\"name\":\"Ideogram\",\"org\":\"Ideogram\"},{\"cat\":\"image\",\"desc\":\"轻量易用的图像生成与在线编辑平台。\",\"name\":\"Playground\",\"org\":\"Playground AI\"},{\"cat\":\"image\",\"desc\":\"国产图像与视频一体化生成工具。\",\"name\":\"可灵图像\",\"org\":\"快手\"},{\"cat\":\"image\",\"desc\":\"剪映团队出品的图像与视频生成应用。\",\"name\":\"即梦 AI\",\"org\":\"字节跳动\"},{\"cat\":\"video\",\"desc\":\"具备影视级效果的 AI 视频生成与编辑工具。\",\"name\":\"Runway\",\"org\":\"Runway\"},{\"cat\":\"video\",\"desc\":\"专注短视频生成与运镜特效的轻量工具。\",\"name\":\"Pika\",\"org\":\"Pika Labs\"},{\"cat\":\"video\",\"desc\":\"电影质感强烈的文本转视频生成器。\",\"name\":\"Luma Dream Machine\",\"org\":\"Luma AI\"},{\"cat\":\"video\",\"desc\":\"支持较长时长与高一致性的视频生成模型。\",\"name\":\"Sora\",\"org\":\"OpenAI\"},{\"cat\":\"video\",\"desc\":\"一键生成数字人讲解与配音视频。\",\"name\":\"HeyGen\",\"org\":\"HeyGen\"},{\"cat\":\"video\",\"desc\":\"面向企业培训与营销的数字人视频平台。\",\"name\":\"Synthesia\",\"org\":\"Synthesia\"},{\"cat\":\"video\",\"desc\":\"支持长时长、高一致性的国产视频生成模型。\",\"name\":\"可灵视频\",\"org\":\"快手\"},{\"cat\":\"audio\",\"desc\":\"输入一句描述即可生成完整歌曲的音乐工具。\",\"name\":\"Suno\",\"org\":\"Suno\"},{\"cat\":\"audio\",\"desc\":\"注重音质与编曲细节的 AI 音乐创作平台。\",\"name\":\"Udio\",\"org\":\"Udio\"},{\"cat\":\"audio\",\"desc\":\"高逼真度的语音合成与声音克隆工具。\",\"name\":\"ElevenLabs\",\"org\":\"ElevenLabs\"},{\"cat\":\"audio\",\"desc\":\"面向配音与旁白场景的语音生成平台。\",\"name\":\"Murf AI\",\"org\":\"Murf\"},{\"cat\":\"audio\",\"desc\":\"像编辑文档一样剪辑音频与视频内容。\",\"name\":\"Descript\",\"org\":\"Descript\"},{\"cat\":\"code\",\"desc\":\"嵌入主流编辑器的智能代码补全助手。\",\"name\":\"GitHub Copilot\",\"org\":\"GitHub\"},{\"cat\":\"code\",\"desc\":\"围绕 AI 协作重新设计的代码编辑器。\",\"name\":\"Cursor\",\"org\":\"Anysphere\"},{\"cat\":\"code\",\"desc\":\"命令行原生的智能体式编程助手。\",\"name\":\"Claude Code\",\"org\":\"Anthropic\"},{\"cat\":\"code\",\"desc\":\"云端一体化的 AI 辅助开发与部署平台。\",\"name\":\"Replit\",\"org\":\"Replit\"},{\"cat\":\"code\",\"desc\":\"面向智能体协作设计的 AI 原生 IDE。\",\"name\":\"Windsurf\",\"org\":\"Codeium\"},{\"cat\":\"code\",\"desc\":\"根据文字描述直接生成前端界面代码。\",\"name\":\"v0\",\"org\":\"Vercel\"},{\"cat\":\"code\",\"desc\":\"支持私有化部署、注重代码隐私的补全工具。\",\"name\":\"Tabnine\",\"org\":\"Tabnine\"},{\"cat\":\"write\",\"desc\":\"面向营销团队的批量文案生成平台。\",\"name\":\"Jasper\",\"org\":\"Jasper\"},{\"cat\":\"write\",\"desc\":\"快速产出广告与社媒文案的写作工具。\",\"name\":\"Copy.ai\",\"org\":\"Copy.ai\"},{\"cat\":\"write\",\"desc\":\"中文写作校对、润色与降重工具。\",\"name\":\"秘塔写作猫\",\"org\":\"秘塔\"},{\"cat\":\"write\",\"desc\":\"内嵌在笔记与文档流程中的写作助手。\",\"name\":\"Notion AI\",\"org\":\"Notion\"},{\"cat\":\"write\",\"desc\":\"英文语法检查与写作风格建议工具。\",\"name\":\"Grammarly\",\"org\":\"Grammarly\"},{\"cat\":\"design\",\"desc\":\"集成多种生成能力的一站式设计套件。\",\"name\":\"Canva Magic Studio\",\"org\":\"Canva\"},{\"cat\":\"design\",\"desc\":\"内建于 Figma 设计流程中的智能辅助功能。\",\"name\":\"Figma AI\",\"org\":\"Figma\"},{\"cat\":\"design\",\"desc\":\"依据描述直接生成可发布的网站页面。\",\"name\":\"Framer AI\",\"org\":\"Framer\"},{\"cat\":\"design\",\"desc\":\"用文字快速生成排版精美的演示文稿。\",\"name\":\"Gamma\",\"org\":\"Gamma\"},{\"cat\":\"design\",\"desc\":\"自动处理排版规则的智能演示文稿工具。\",\"name\":\"Beautiful.ai\",\"org\":\"Beautiful.ai\"},{\"cat\":\"office\",\"desc\":\"融合笔记、文档与数据库的 AI 效率工具。\",\"name\":\"Notion\",\"org\":\"Notion\"},{\"cat\":\"office\",\"desc\":\"内置于飞书办公套件中的智能助手。\",\"name\":\"飞书智能伙伴\",\"org\":\"飞书\"},{\"cat\":\"office\",\"desc\":\"融入 Office 全家桶的办公场景助手。\",\"name\":\"Microsoft Copilot\",\"org\":\"Microsoft\"},{\"cat\":\"office\",\"desc\":\"会议实时转写、摘要与待办提取工具。\",\"name\":\"Otter.ai\",\"org\":\"Otter.ai\"},{\"cat\":\"office\",\"desc\":\"面向中文场景的会议记录与转写工具。\",\"name\":\"讯飞听见\",\"org\":\"科大讯飞\"},{\"cat\":\"search\",\"desc\":\"检索结果附带引用来源的 AI 搜索引擎。\",\"name\":\"Perplexity\",\"org\":\"Perplexity\"},{\"cat\":\"search\",\"desc\":\"支持多种自定义模式的 AI 搜索平台。\",\"name\":\"You.com\",\"org\":\"You.com\"},{\"cat\":\"search\",\"desc\":\"面向学术文献检索与梳理的研究助手。\",\"name\":\"Elicit\",\"org\":\"Elicit\"},{\"cat\":\"search\",\"desc\":\"从论文集合中提炼科学共识的搜索工具。\",\"name\":\"Consensus\",\"org\":\"Consensus\"},{\"cat\":\"search\",\"desc\":\"面向中文语境优化的 AI 搜索工具。\",\"name\":\"秘塔搜索\",\"org\":\"秘塔\"},{\"cat\":\"agent\",\"desc\":\"低代码构建 AI 应用与工作流的平台。\",\"name\":\"Dify\",\"org\":\"Dify\"},{\"cat\":\"agent\",\"desc\":\"面向中文用户的智能体搭建与发布平台。\",\"name\":\"扣子 Coze\",\"org\":\"字节跳动\"},{\"cat\":\"agent\",\"desc\":\"连接数千应用、按规则自动执行任务的平台。\",\"name\":\"Zapier AI\",\"org\":\"Zapier\"},{\"cat\":\"agent\",\"desc\":\"以可视化流程搭建自动化场景的工具。\",\"name\":\"Make\",\"org\":\"Make\"},{\"cat\":\"agent\",\"desc\":\"早期具备自主任务拆解能力的智能体框架。\",\"name\":\"AutoGPT\",\"org\":\"Significant Gravitas\"}]";
+</script>
+<script src="/js/main.js" defer></script>
 
 </body>
 </html>

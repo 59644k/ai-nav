@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>群星索引 · AI Tool Atlas</title>
+		<link>https://example.com/</link>
+		<description>Recent content on 群星索引 · AI Tool Atlas</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>如何在众多 AI 视频工具里挑到合适的那一个</title>
+				<link>https://example.com/posts/choose-ai-video-tool/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/choose-ai-video-tool/</guid>
+				<description>&lt;p&gt;AI 视频生成工具这两年更新很快，功能列表看起来都差不多，但真正上手后体验差异很大。挑选时，与其看参数表，不如先想清楚自己的场景。&lt;/p&gt;&#xA;&lt;h2 id=&#34;先明确你的产出目标&#34;&gt;先明确你的产出目标&lt;/h2&gt;&#xA;&lt;p&gt;如果是做营销短片，一致性和运镜控制往往比画面精致度更重要；如果是概念验证或素材探索，生成速度和迭代成本反而更关键。把目标写下来，再回头看工具的优先级排序会清楚很多。&lt;/p&gt;&#xA;&lt;h2 id=&#34;三个值得实际测试的维度&#34;&gt;三个值得实际测试的维度&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;时长与稳定性&lt;/strong&gt;：能不能生成 10 秒以上还保持人物、场景一致&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;运镜与可控性&lt;/strong&gt;：是否支持关键帧、镜头运动描述&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;后期衔接成本&lt;/strong&gt;：导出格式、分辨率是否方便进现有剪辑流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;不要只看官方演示&#34;&gt;不要只看官方演示&lt;/h2&gt;&#xA;&lt;p&gt;官方展示视频通常是精选结果，建议直接用自己的真实素材或文案跑一遍，观察失败率而不是最好的那一次输出。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;没有放之四海皆准的&amp;quot;最好用&amp;quot;，只有&amp;quot;最适合当前场景&amp;quot;。花半小时用真实需求测试，比看十篇评测更有效。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>把 AI 编程助手用出效率的三个习惯</title>
+				<link>https://example.com/posts/coding-agent-workflow/</link>
+				<pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/coding-agent-workflow/</guid>
+				<description>&lt;p&gt;用了一段时间 AI 编程助手后，发现效率提升的关键往往不在工具本身，而在使用习惯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯一把任务拆小再交给它&#34;&gt;习惯一：把任务拆小再交给它&lt;/h2&gt;&#xA;&lt;p&gt;一次性丢给助手一个模糊的大需求，得到的代码通常需要大改。拆成可独立验证的小步骤，每一步都能跑通，整体反而更快。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯二让它先复述理解再动手&#34;&gt;习惯二：让它先复述理解再动手&lt;/h2&gt;&#xA;&lt;p&gt;在正式生成代码前，先要求它用自己的话复述需求、列出实现思路，能提前暴露理解偏差，避免返工。&lt;/p&gt;&#xA;&lt;h2 id=&#34;习惯三把测试写在前面&#34;&gt;习惯三：把测试写在前面&lt;/h2&gt;&#xA;&lt;p&gt;给出输入输出示例或简单测试用例，再让助手实现，比事后靠肉眼检查代码正确性靠谱得多。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;工具能力在快速迭代，但&amp;quot;如何提问、如何拆解、如何验证&amp;quot;这套工作方法，才是长期不贬值的能力。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>从 Prompt 到成稿：AI 写作工具的进阶用法</title>
+				<link>https://example.com/posts/ai-writing-tools-guide/</link>
+				<pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/ai-writing-tools-guide/</guid>
+				<description>&lt;p&gt;很多人对 AI 写作工具的印象还停留在&amp;quot;输入一句话生成一篇文章&amp;quot;，但这种用法产出的内容通常比较空泛。更好的方式是把写作拆成阶段，分别使用 AI 协作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第一阶段结构先行&#34;&gt;第一阶段：结构先行&lt;/h2&gt;&#xA;&lt;p&gt;先让工具帮你梳理提纲和逻辑结构，而不是直接生成正文。结构确认后再往下写，返工率会明显降低。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第二阶段分段生成人工把关&#34;&gt;第二阶段：分段生成，人工把关&lt;/h2&gt;&#xA;&lt;p&gt;按小节生成内容，每段都自己读一遍再决定是否采用，比整篇生成后再大改效率更高，也更容易保持文风统一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第三阶段润色与降重&#34;&gt;第三阶段：润色与降重&lt;/h2&gt;&#xA;&lt;p&gt;初稿完成后，用工具做语言层面的润色、检查重复表达，这一步 AI 的价值反而最稳定、最不容易踩坑。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;把 AI 当协作者而不是代笔者，分阶段介入，成稿质量和效率都会比&amp;quot;一键生成&amp;quot;更可靠。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2025 年的自动化 Agent 工具，走到哪一步了</title>
+				<link>https://example.com/posts/ai-agent-automation-2025/</link>
+				<pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/ai-agent-automation-2025/</guid>
+				<description>&lt;p&gt;这一年 Agent 类产品密集发布，但真正稳定跑在日常工作流里的，其实是少数几种模式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;落地最稳的场景规则明确的重复性任务&#34;&gt;落地最稳的场景：规则明确的重复性任务&lt;/h2&gt;&#xA;&lt;p&gt;比如信息抓取后按规则分发、多个应用之间的数据同步，这类任务边界清晰、失败可回滚，Agent 化之后收益很直接。&lt;/p&gt;&#xA;&lt;h2 id=&#34;还不够稳的场景多步骤开放式决策&#34;&gt;还不够稳的场景：多步骤开放式决策&lt;/h2&gt;&#xA;&lt;p&gt;需要连续判断、涉及多个外部系统且容错率低的任务，目前仍然需要较多人工介入和复核，完全放手的风险偏高。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一个实用建议&#34;&gt;一个实用建议&lt;/h2&gt;&#xA;&lt;p&gt;先从&amp;quot;结果可验证、出错代价小&amp;quot;的任务开始接入 Agent，跑稳定之后再逐步扩大自动化范围，而不是一开始就追求端到端全自动。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;Agent 工具的能力边界仍在扩张，但&amp;quot;任务可验证性&amp;quot;依然是决定要不要交给它做的核心标准。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>AI 搜索和传统搜索引擎，该什么时候用哪个</title>
+				<link>https://example.com/posts/perplexity-vs-traditional-search/</link>
+				<pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>https://example.com/posts/perplexity-vs-traditional-search/</guid>
+				<description>&lt;p&gt;AI 搜索类工具用久了会发现，它不是传统搜索引擎的替代品，而是补充。两者擅长的问题类型不太一样。&lt;/p&gt;&#xA;&lt;h2 id=&#34;ai-搜索更擅长需要整合与解释的问题&#34;&gt;AI 搜索更擅长：需要整合与解释的问题&lt;/h2&gt;&#xA;&lt;p&gt;比如&amp;quot;这几种方案的区别是什么&amp;quot;、&amp;ldquo;这个概念的适用场景有哪些&amp;rdquo;，AI 搜索能把多个来源的信息整合成连贯的解释，省去自己一篇篇打开对比的时间。&lt;/p&gt;&#xA;&lt;h2 id=&#34;传统搜索更擅长找具体时效性极强的信息&#34;&gt;传统搜索更擅长：找具体、时效性极强的信息&lt;/h2&gt;&#xA;&lt;p&gt;比如查某个具体页面、最新的一条动态、精确的官方文档地址，传统搜索的结果更直接，也更容易验证来源。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一个简单的判断标准&#34;&gt;一个简单的判断标准&lt;/h2&gt;&#xA;&lt;p&gt;如果你的问题需要&amp;quot;理解&amp;quot;，优先用 AI 搜索；如果你的问题需要&amp;quot;定位到某个具体页面或事实&amp;quot;，传统搜索通常更快。&lt;/p&gt;&#xA;&lt;h2 id=&#34;小结&#34;&gt;小结&lt;/h2&gt;&#xA;&lt;p&gt;两者不是竞争关系，根据问题类型切换着用，比固守一种工具效率更高。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
